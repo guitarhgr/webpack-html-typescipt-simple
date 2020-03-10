@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 内嵌css 不建议 最好分开 -->
+    <style>
+        <%= 
+        compilation.assets[htmlWebpackPlugin.files.chunks['main']['css'][0].substr(htmlWebpackPlugin.files.publicPath.length)].source()
+        %>
+    </style>
+</head>
+<body>
+    <div id="toolBarModule"></div>
+    <div id='gameoverPanel'>
+        20
+    </div>
+    <div id="scoreText" class="text-reflect"></div>
+    <div id='loger'></div>
+    <!-- 内嵌js -->
+    <script>
+        <%= 
+        compilation.assets[htmlWebpackPlugin.files.chunks['main'].entry.substr(htmlWebpackPlugin.files.publicPath.length)].source()
+        %>
+    </script>
+</body>
+</html>

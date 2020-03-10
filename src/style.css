@@ -1,0 +1,68 @@
+html{ font-size: 14px;}
+body { margin: 0; background-color: #000000; font-family: 'SegoeBIT';background-repeat: no-repeat; background-position: center center;background-size: 60%;height: 100vh; width: 100vw;}
+canvas {display: block;}
+#downloadButton,#downloadButtonBig,#logoImg,#retryButton,#installNow,#tapBtn { position:absolute; z-index: 10000;}
+#scoreText,#percentText,#notice1Text{pointer-events: none; position: absolute; display: none;}
+#scoreText{color: #ffffff; width: 100vw; left:0vw; top:35vh;z-index: 100; text-align: center; font-weight:bold; text-indent: 0em;
+    text-shadow: 0 1px 0 #54aff5, 0 2px 0 #54aff5, 0 3px 0 #54aff5, 0 4px 0 #54aff5, 0 5px 0 #54aff5, 0 6px 1px #54aff5, 0 0 5px #54aff5, 0 1px 3px #54aff5, 0 3px 5px #54aff5, 0 5px 10px #54aff5, 0 10px 10px #54aff5,0 20px 20px #888; }
+#percentText{color: #ffffff;;width: 100vw; left:0vw; top:20vh; z-index: 100; text-align: center;
+    font-weight:bold;
+    text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+    -webkit-text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+    -moz-text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+}
+#toolbar{pointer-events: none; position: absolute; display: block; width: 80vw; left: 0; top: 0; z-index: 3;}
+#notice1Text{pointer-events: none; position: absolute; display: none; width: 80vw; left: 10vw; top: 0;}
+#toolbar_arrow{pointer-events: none; position: absolute; display: block; width: 10vw; margin: 0; padding: 0; border: 0; font-weight: bold; color: rgb(255, 255, 255); }
+#toolbar_score{pointer-events: none; position: absolute; display: block; width: 10vw; margin: 0; padding: 0; border: 0; font-weight: bold; color: #1ca9f5; }
+#gameover{position:absolute; z-index: 999; font-size: 1.5em; text-align: center; width: 100vw; color: #ffffff;
+	height: 4vh; line-height: 4vh; top: 48vh;
+    font-weight:bold; display: none;
+    text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+    -webkit-text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+    -moz-text-shadow:#54aff5 .06em 0 0,#54aff5 0 .06em 0,#54aff5 -.06em 0 0,#54aff5 0 -.06em 0;
+    }
+.text-reflect{float:left;-webkit-box-reflect: below .05em -webkit-linear-gradient(transparent,transparent 10%,rgba(255,255,255,.5));}
+.text-reflect-base{margin-right:4px;float:left;-webkit-box-reflect:below .05em;}
+#toolBarModule{position: absolute; left: 0; top: 0;}
+
+#gameoverPanel{position:absolute; z-index: 4; display: block; color: #f1f1f1; text-align: center;
+    font-family: "Microsoft YaHei";font-weight: bold; display: none;}
+
+/*竖屏*/
+@media all and (orientation : portrait){
+    #scoreText{ font-size: 2.6em;}
+    #percentText{ font-size: 1.2em; top:8em;}
+    #notice1Text,#notice2Text{ font-size: 1.2em; top:8em;}
+    #logoImg { pointer-events: none; height: 3.5em; width: 7.1em; top:1em; left:1em;}
+    #downloadButton { height: 2.5em; width: 6.5em; top:4.5em; left:1em;}
+    #downloadButtonBig {height: 4em; width: 10em; bottom:35vh; left:calc(50% - 5em);}
+    #installNow {height: 4em; width: 16em; bottom:35vh; left:calc(50% - 8em);}
+    #retryButton {height: 4em; width: 16em; bottom:35vh; left:calc(50% - 8em);}
+    #tapBtn {height: 4em; width: 16em; bottom:35vh; left:calc(50% - 8em);}
+    #toolbar{width: 80vw; }
+	#notice1Text{width: 80vw; left: 10vw; top: 30vh; position: absolute; z-index: 4;}
+	#toolbar_arrow{width: 10vw; left: 41vw; top: 4vw; height: 7.4vw; line-height: 7.4vw;}
+	#toolbar_score{width: 10vw; left: 67vw; top: 4vw; height: 7.4vw; line-height: 7.4vw;}
+    /*panel*/
+    #gameoverPanel{width: 100vw; bottom: 45vh; font-size: 22px;}
+}
+/*横屏*/
+@media all and (orientation : landscape) {
+    #scoreText{ font-size: 2.6em;}
+    #percentText{ font-size: 1.2em; top:4em;}
+    #notice1Text,#notice2Text{ font-size: 1.2em; top:4em;}
+    #logoImg { pointer-events: none; height: 3.5em; width: 7.1em; top:1em; left:1em;}
+    #downloadButton { height: 2.5em; width: 6.5em; top:4.5em; left:1em;}
+    #downloadButtonBig {height: 3em; width: 8em; bottom:35vh; left:calc(50% - 4em);}
+    #installNow {height: 3em; width: 12em; bottom:35vh; left:calc(50% - 6em);}
+    #retryButton {height: 3em; width: 12em; bottom:35vh; left:calc(50% - 6em);}
+    #tapBtn {height: 3em; width: 12em; bottom:35vh; left:calc(50% - 6em);}
+    #toolbar{width: 40vw;}
+	#notice1Text{width: 30vw; left: 35vw; top: 18vh; position: absolute; z-index: 4;}
+	#toolbar_arrow{width: 5vw; left: 20.5vw; top: 2vw; height: 3.8vw; line-height: 3.8vw;}
+	#toolbar_score{width: 5vw; left: 33.5vw; top: 2vw; height: 3.8vw; line-height: 3.8vw;}
+    /*panel*/
+    #gameoverPanel{width: 100vw; bottom: 40vh; font-size: 18px;}
+} 
+#loger{display: none; position: absolute; z-index: 10000; left: 0; top: 15vh; color: white; font-weight:normal; font-size: 12px;};

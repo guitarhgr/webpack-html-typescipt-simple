@@ -1,0 +1,41 @@
+# 使用的NPM包注解
+
+## package.json
+- @babel/core": babel转换js核心库.
+- @babel/plugin-proposal-class-properties": 解析class属性.
+- @babel/preset-env": 预设环境.
+- @babel/preset-typescript": 处理typescript.
+- autoprefixer": css添加前缀兼容.
+- babel-loader": bable加载器.
+- circular-dependency-plugin": 循环依赖检查.
+- clean-webpack-plugin": 清除之前的构建文件.
+- connect-history-api-fallback": 回到首页.
+- copy-webpack-plugin": 复制.
+- cors": 开发 chrome 扩展的时候可能需要开启跨域.
+- cross-env": 跨操作系统的设置环境变量的工具.
+- css-loader": css 加载器.
+- friendly-errors-webpack-plugin": 控制台输出更友好.
+- html-minifier": html压缩.
+- html-webpack-plugin": html打包生成.
+- jszip": jszip js压缩解析.
+- mini-css-extract-plugin": css分离单文件.
+- optimize-css-assets-webpack-plugin": css压缩.
+- postcss": css后处理.
+- postcss-flexbugs-fixes": css后处理-修复flex布局bug.
+- postcss-loader": css后处理加载器.
+- postcss-preset-env": css后处理预设环境.
+- speed-measure-webpack-plugin": 打包速度测试.
+- style-loader": style加载器.
+- terser-webpack-plugin": js压缩.
+- three": javascript 3d 库.
+- ts-node": ts支持.
+- typescript": typescript.
+- url-loader": 解析导入的文件为发布时的 url,并将文件输出到指定的位置.
+- webpack": 打包.
+- webpack-cli": 打包命令行.
+- webpack-dev-middleware": 打包开发中间层.
+- webpack-dev-server": 打包开发环境服务器.
+- webpack-env": 打包环境.
+- webpack-hot-middleware": 打包热更新.
+- webpack-merge": 打包config合并.
+- webpackbar": 打包进度条
