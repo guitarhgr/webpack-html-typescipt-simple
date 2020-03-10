@@ -885,13 +885,6 @@
     "@types/tapable" "*"
     "@types/webpack" "*"
 
-"@types/jszip@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.npm.taobao.org/@types/jszip/download/@types/jszip-3.1.7.tgz#c45bd72b448b3fb002125282c57c36190247cb34"
-  integrity sha1-xFvXK0SLP7ACElKCxXw2GQJHyzQ=
-  dependencies:
-    "@types/node" "*"
-
 "@types/memory-fs@*":
   version "0.3.2"
   resolved "https://registry.npm.taobao.org/@types/memory-fs/download/@types/memory-fs-0.3.2.tgz#5d4753f9b390cb077c8c8af97bc96463399ceccd"
@@ -968,13 +961,6 @@
   dependencies:
     "@types/webpack" "*"
     terser "^4.3.9"
-
-"@types/three@^0.103.2":
-  version "0.103.2"
-  resolved "https://registry.npm.taobao.org/@types/three/download/@types/three-0.103.2.tgz#f7d49130001c551941a0ded757def810579aafc4"
-  integrity sha1-99SRMAAcVRlBoN7XV974EFear8Q=
-  dependencies:
-    three "*"
 
 "@types/uglify-js@*":
   version "3.0.4"
@@ -3741,11 +3727,6 @@ ignore@^3.3.5:
   resolved "https://registry.npm.taobao.org/ignore/download/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
   integrity sha1-Cpf7h2mG6AgcYxFg+PnziRV/AEM=
 
-immediate@~3.0.5:
-  version "3.0.6"
-  resolved "https://registry.npm.taobao.org/immediate/download/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
-  integrity sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=
-
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/import-cwd/download/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -4249,16 +4230,6 @@ json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
-jszip@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.npm.taobao.org/jszip/download/jszip-3.2.2.tgz#b143816df7e106a9597a94c77493385adca5bd1d"
-  integrity sha1-sUOBbffhBqlZepTHdJM4WtylvR0=
-  dependencies:
-    lie "~3.3.0"
-    pako "~1.0.2"
-    readable-stream "~2.3.6"
-    set-immediate-shim "~1.0.1"
-
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/killable/download/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -4319,13 +4290,6 @@ levenary@^1.1.1:
   integrity sha1-hCqe6Y0gdap/ru2+MmeekgX0b3c=
   dependencies:
     leven "^3.1.0"
-
-lie@~3.3.0:
-  version "3.3.0"
-  resolved "https://registry.npm.taobao.org/lie/download/lie-3.3.0.tgz#dcf82dee545f46074daf200c7c1c5a08e0f40f6a"
-  integrity sha1-3Pgt7lRfRgdNryAMfBxaCOD0D2o=
-  dependencies:
-    immediate "~3.0.5"
 
 loader-runner@^2.4.0:
   version "2.4.0"
@@ -5161,7 +5125,7 @@ pako@~0.2.0:
   resolved "https://registry.npm.taobao.org/pako/download/pako-0.2.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpako%2Fdownload%2Fpako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
   integrity sha1-8/dSL073gjSNqBYbrZ7P1Rv4OnU=
 
-pako@~1.0.2, pako@~1.0.5:
+pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.npm.taobao.org/pako/download/pako-1.0.11.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpako%2Fdownload%2Fpako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha1-bJWZ00DVTf05RjgCUqNXBaa5kr8=
@@ -6530,11 +6494,6 @@ set-blocking@^2.0.0:
   resolved "https://registry.npm.taobao.org/set-blocking/download/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
 
-set-immediate-shim@~1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/set-immediate-shim/download/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
-  integrity sha1-SysbJ+uAip+NzEgaWOXlb1mfP2E=
-
 set-value@^2.0.0, set-value@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/set-value/download/set-value-2.0.1.tgz#a18d40530e6f07de4228c7defe4227af8cad005b"
@@ -7071,11 +7030,6 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npm.taobao.org/text-table/download/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
-
-three@*, three@^0.114.0:
-  version "0.114.0"
-  resolved "https://registry.npm.taobao.org/three/download/three-0.114.0.tgz#754d08467a950ddeef06a0c645a1302b130e455a"
-  integrity sha1-dU0IRnqVDd7vBqDGRaEwKxMORVo=
 
 through2@^2.0.0:
   version "2.0.5"
